@@ -1,0 +1,156 @@
+1。
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>我的第一段</h1>
+<p id="demo">JS能改变HTMl中的内容</p>
+<script>
+function myfunction(){
+    x=document.getElementById("demo");//找到元素
+    x.innerHTML="你好，这世界";//改变内容
+}
+</script>
+
+<button type="button" onclick="myfunction()">点击这里</button>
+
+</body>
+</html>
+
+
+
+
+2.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function changeImage() {
+    x=document.getElementById("myimage")
+    if (x.src.match("bulbon"))
+    {
+        x.src="e:\ eg_bulboff.gif";
+    }
+    else
+    {
+        x.src="e:\ eg_bulboff.gif";
+    }
+}
+</script>
+<img id="myimage" onclick="changeImage()" src="e:\ eg_bulboff.gif">
+//注意路径问题
+</body>
+</html>
+
+
+3.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>我的第一段</h1>
+<p id="demo">
+    JS能改变HTML元素的样式
+</p>
+<script>
+    function myfunction(){
+        x=document.getElementById("demo");//找到元素
+        x.style.color="pink";//改变元素
+    }
+</script>
+<button type="button" onclick="myfunction()">点击这里</button>
+</body>
+</html>
+//重点   x.style.color="pink";//改变元素
+
+4.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>我的第一段 JavaScript</h1>
+<p>请输入数字。如果输入值不是数字，浏览器就会弹出警告框。</p>
+<input id="demo" type="text">
+<script>
+    function myFunction() {
+        var x=document.getElementById("demo").value;
+        if(x==" "||isNaN(x))
+        {
+            alert("输入格式错误!!");
+        }
+    }
+</script>
+<button type="button" onclick="myFunction()">点击这里</button>
+</body>
+</html>
+//重点  如果 x 是特殊的非数字值 NaN（或者能被转换为这样的值），返回的值就是 true。如果 x 是其他值,则返回 false。
+//.value 是为了获取输入的值
+
+
+5.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>我的第一段 JavaScript</h1>
+<p>JS能直接写入HTML输出流中：</p>
+<script>
+document.write("<h1>This is a heading</h1>")  ;
+document.write("<p>This is a paragraph</p>")
+</script>
+<p>
+    你只能在HTML输出流中使用<strong>document.write</strong>.
+    如果您在文档加载后使用它(比如函数中)，就会覆盖整个文档。
+</p>
+<!--<button type="button" onclick="myFunction()">点击这里</button>-->
+</body>
+</html>
+//重点理解：  如果您在文档加载后使用它(比如函数中)，就会覆盖整个文档。
+
+
+6.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我爱编程</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML="最好的我们终会相遇";
+        }
+    </script>
+</head>
+<body>
+<h1>我的第一段 JavaScript</h1>
+<p id="demo"><b>一句话</b></p>
+<button type="button" onclick="myFunction()">点击这里</button>
+</body>
+</html>
+
+
+JS函数可以写在head中，也可以写在body底部，也可以保存到外部文件中<script src="myScript.js"></script>.
+
+7.
+
+
+
+
+
+    

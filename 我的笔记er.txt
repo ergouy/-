@@ -1,0 +1,146 @@
+19.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我爱编程</title>
+    <script>
+    var txt="";
+    function message() {
+        try
+        {
+            adddlert("Welcome SB");
+        }
+        catch (err)
+        {
+            txt="本也有一个错误\n\n";
+            txt+="错误描述："+err.message +"\n\n ";
+            txt+="点击确定继续\n\n";
+            alert(txt);
+        }
+    }
+    </script>
+</head>
+<body>
+<p></p>
+
+<input type="button" value="查看消息" onclick="message()" />
+
+<script>
+
+
+</script>
+</body>
+</html>
+//能不能同时指出两个错误
+
+
+2.
+验证先空过
+
+
+
+3.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>心静自然凉</title>
+
+</head>
+<body>
+
+<p>春风十里</p>
+<div id="main">
+    <p>春风十里不如你</p>
+    <p>本例演示<b>getElementsByTagname</b>方法</p>
+</div>
+
+
+<script>
+    var x=document.getElementById("main");
+    var y=x.getElementsByTagName("p");
+    document.write('id 为 "main" 的 div 中的第一段文本是：' + y[0].innerHTML +"<br>"+'id 为 "main" 的 div 中的第一段文本是：' + y[1].innerHTML )
+</script>
+
+</body>
+</html>
+//getElementsByTagName() 方法可返回带有指定标签名的对象的集合。
+
+
+4.
+document.write(Date());可用于输出中国标准时间
+
+5.有趣的 隐藏文本
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>心静自然凉</title>
+
+</head>
+<body>
+<p id="p1">这是一段文本</p>
+
+<input type="button" value="隐藏文本" onclick="document.getElementById('p1').style.visibility='hidden'" />
+<input type="button" value="显示文本" onclick="document.getElementById('p1').style.visibility='visible'" />
+
+<script>
+
+</script>
+
+</body>
+</html>
+//1,hidden 实现隐藏
+  2,注意onclick
+
+
+6.最喜欢的事件
+     当用户点击鼠标时
+     当网页已加载时
+     当图像已加载时
+     当鼠标移动到元素上时
+     当输入字段被改变时
+     当提交 HTML 表单时
+     当用户触发按键时
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>心静自然凉</title>
+
+</head>
+<body onload="checkCookies()">
+
+
+
+
+<script>
+function checkCookies() {
+    if(navigator.cookieEnabled==true)
+    {
+        alert("已启用  cookie");
+    }
+    else
+    {
+        alert("未启用  cookie");
+    }
+}
+</script>
+<p>会提示你是否启用了cook</p>
+</body>
+</html>
+  6-1  cookieEnabled 属性可返回一个布尔值，如果浏览器启用了 cookie，该属性值为 true。如果禁用了 cookie，则值为 false。
+
+
+  6-2 
+
+
+
+7.
+toUpperCase() 方法来将文本转换为大写：
